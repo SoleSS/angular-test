@@ -1,0 +1,16 @@
+.main-container {
+  min-height: 905px;
+  max-width: 1205px;
+
+  background-color: #ffffff;
+  border-left: 3px solid #d0d0d0;
+  border-right: 3px solid #d0d0d0;
+}
+
+.container { display: table; }
+.content { display: table-row; height: 100%; }
+.content-body { display: table-cell; }
+
+.container { height: 100%; }
+.header, .footer { padding: 10px 20px; background: #f7f7f7; }
+.content-body { padding: 20px; background: #e7e7e7; }

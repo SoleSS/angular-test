@@ -1,5 +1,6 @@
 body {
   margin:0px;
+  background-color: #eeeeee;
 }
 
 fa-icon { width: fit-content; }
@@ -67,6 +68,11 @@ fa-icon { width: fit-content; }
 
 .center {
   text-align: center;
+}
+
+
+.text-decoration-none {
+  text-decoration: none;
 }
 
 .mx-auto {

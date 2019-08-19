@@ -1,15 +1,17 @@
 <div class="clearfix top-bar-wrap pt1 pb1 pl1 pr1">
-  <div class="logo-wrap md-col md-col-3">
-    <div class="block circle border logo">
+  <div class="logo-wrap md-col md-col-3 pl1">
+    <a class="block circle border logo text-decoration-none" [routerLink]="['/']">
       <span class="block lin-wrap">LIN</span>
       <span class="block go-wrap">GO</span>
-    </div>
+    </a>
   </div>
   <div class="menu-wrap md-col md-col-6">
     <ul class="list-reset fit-content mx-auto">
       <li class="inline-block mr2">
-        <fa-icon [icon]="faFileSignature" class="block mx-auto mb1" size="2x"></fa-icon>
-        <span class="block center">Уроки</span>
+        <a class="block center text-decoration-none" [routerLink]="['/lessons']">
+          <fa-icon [icon]="faFileSignature" class="block mx-auto mb1" size="2x"></fa-icon>
+          <span class="block center">Уроки</span>
+        </a>
       </li>
       <li class="inline-block mr2">
         <fa-icon [icon]="faChalkboardTeacher" class="block mx-auto mb1" size="2x"></fa-icon>
