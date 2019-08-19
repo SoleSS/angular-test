@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faChalkboardTeacher, faFileSignature, faSchool, faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { faChalkboardTeacher, faFileSignature, faSchool, faGamepad, faBell, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -12,6 +12,8 @@ export class TopBarComponent implements OnInit {
   faFileSignature = faFileSignature;
   faSchool = faSchool;
   faGamepad = faGamepad;
+  faBell = faBell;
+  faCommentDots = faCommentDots;
 
   constructor() { }
 

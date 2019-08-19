@@ -15,7 +15,7 @@ fa-icon { width: fit-content; }
   padding-left: 0;
 }
 
-.circle {
+.circle, .badge {
   border-radius: 50%;
 }
 
@@ -24,6 +24,46 @@ fa-icon { width: fit-content; }
   border-width: 1px;
 }
 
+.full-width {
+  width: 100%;
+}
+.fit {
+  max-width: 100%;
+}
+.fit-content {
+  width: fit-content;
+}
+
+.icon-sm {
+  width: 15px;
+}
+.badge {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+.badge-sm {
+
+}
+.bg-green, .bg-hover-green:hover {
+  color: #fff;
+  background-color: #4CAF50;
+}
+.bg-red, .bg-hover-green:hover {
+  color: #fff;
+  background-color: #f34848;
+}
+
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 
 .center {
   text-align: center;
