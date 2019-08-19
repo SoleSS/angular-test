@@ -1,0 +1,19 @@
+.top-bar-wrap {
+  background-color: #5ab3e4;
+
+  color: #FFF;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+
+  .lin-wrap, .go-wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .lin-wrap { margin-top: 7px; }
+  .go-wrap { color: #feed7d; }
+}
