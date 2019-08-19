@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name": "Anna Kaiser",
+    "photo": "images/assets/anna-kaiser.jpg",
+  },
+  "title": "Овощи",
+  "eng_title": "Vegetables",
+  "category": "Beginners",
+  "description": "Описание урока",
+  "content": "Содержание урока",
+  "created_at": 1566232167,
+  "updated_at": 1566232187,
+  "exercises": [
+
+  ]
+}

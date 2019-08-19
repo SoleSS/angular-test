@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name": "Anna Kaiser",
+    "photo": "images/assets/anna-kaiser.jpg",
+  },
+  "title": "Фрукты",
+  "eng_title": "Fruits",
+  "category": "Beginners",
+  "description": "Описание урока",
+  "content": "Содержание урока",
+  "created_at": 1566231906,
+  "updated_at": 1566231916,
+  "exercises": [
+
+  ]
+}
