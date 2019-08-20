@@ -3,14 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomepageComponent} from './homepage/homepage.component';
 import {LessonpageComponent} from './lessonpage/lessonpage.component';
 import {LessonComponent} from './lesson/lesson.component';
-import {ExerciseComponent} from './exercise/exercise.component';
 
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'lessons', component: LessonpageComponent },
-  { path: 'lesson/:lessonId/:exerciseId', component: ExerciseComponent },
-  { path: 'lesson/:id', component: LessonComponent },
+  { path: 'lesson/:lessonId/exercise/:exerciseId', component: LessonComponent },
+  { path: 'lesson/:lessonId', component: LessonComponent },
 ];
 
 @NgModule({

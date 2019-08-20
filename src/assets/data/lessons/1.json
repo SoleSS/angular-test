@@ -12,6 +12,15 @@
   "created_at": 1566231906,
   "updated_at": 1566231916,
   "exercises": [
-
+    {
+      "id": 1,
+      "title": "Where is an Apple?",
+      "type": 1
+    },
+    {
+      "id": 2,
+      "title": "Where are Bananas?",
+      "type": 1
+    }
   ]
 }

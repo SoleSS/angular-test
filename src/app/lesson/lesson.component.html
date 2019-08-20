@@ -61,4 +61,10 @@
       </li>
     </ul>
   </div>
+
+  <div class="exercise-wrap" *ngIf="exercise">
+    <app-exercise
+      [params]="exercise[0]">
+    </app-exercise>
+  </div>
 </div>

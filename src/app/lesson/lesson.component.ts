@@ -15,13 +15,15 @@ export class LessonComponent implements OnInit {
   faBookmark = faBookmark;
   faEllipsisV = faEllipsisV;
 
+  exercise;
+
   constructor(
     private route: ActivatedRoute,
     private lessonService: LessonService,
     private helper: Helper,
   ) {
     this.route.paramMap.subscribe(params => {
-      lessonService.getLesson(params.get('id')).subscribe(
+      lessonService.getLesson(params.get('lessonId')).subscribe(
         data => {
           this.lesson = data;
 
@@ -33,6 +35,12 @@ export class LessonComponent implements OnInit {
           } else {
             const days = Math.round(diff / 86400);
             this.createdAgoTxt = helper.stringPluralForm(days, ['день', 'дня', 'дней']) + ' назад';
+          }
+
+          if (params.get('exerciseId') !== null) {
+            this.exercise = this.lesson.exercises.filter(obj => {
+              return (obj.id as number) === params.get('exerciseId') * 1;
+            });
           }
 
         },
