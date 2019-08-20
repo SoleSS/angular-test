@@ -10,6 +10,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LessonpageComponent } from './lessonpage/lessonpage.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { ExerciseComponent } from './exercise/exercise.component';
+import { Exercise1Component } from './exercise1/exercise1.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExerciseComponent } from './exercise/exercise.component';
     HomepageComponent,
     LessonpageComponent,
     LessonComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    Exercise1Component
   ],
   imports: [
     BrowserModule,

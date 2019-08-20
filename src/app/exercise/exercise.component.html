@@ -1,1 +1,6 @@
-title: {{params.title}}
+<div class="exercise-view-wrap" *ngIf="params.type === 1">
+  <app-exercise1
+    [params]="params">
+  </app-exercise1>
+</div>
+
