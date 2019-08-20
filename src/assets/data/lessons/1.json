@@ -15,6 +15,28 @@
     {
       "id": 1,
       "title": "Where is an Apple?",
+      "options": [
+        {
+          "caption": null,
+          "image": "assets/images/bananas.jpg",
+          "hash": ""
+        },
+        {
+          "caption": null,
+          "image": "assets/images/apple.jpg",
+          "hash": ""
+        },
+        {
+          "caption": null,
+          "image": "assets/images/pineapple.jpg",
+          "hash": ""
+        },
+        {
+          "caption": null,
+          "image": "assets/images/strawberry.jpg",
+          "hash": ""
+        }
+      ],
       "type": 1
     },
     {

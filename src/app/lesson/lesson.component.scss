@@ -23,4 +23,11 @@
   .title-wrap {
       color: #5ab3e4;
   }
+
+  .lesson-nav {
+    a.active, a.active:hover {
+      color: #7bc2e9;
+      text-decoration: underline;
+    }
+  }
 }

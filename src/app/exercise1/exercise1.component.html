@@ -1,3 +1,13 @@
 <div class="exercise-body" *ngIf="params">
-  {{params.title}}
+  <div class="h1 center title-wrap mb2">
+    {{params.title}}
+  </div>
+
+  <div class="options-wrap fit-content mx-auto">
+    <div class="option fit-content left border mr1" *ngFor="let item of params.options">
+      <img src="{{item.image}}">
+    </div>
+  </div>
+
+
 </div>
