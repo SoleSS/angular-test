@@ -1,1 +1,16 @@
-<p>lessonpage works!</p>
+<div class="lessons-list-wrap">
+  <div class="lesson" *ngFor="let lesson of lessonsList">
+
+    <div class="clearfix mb2 border pl1 pr1 pt1 pb1 rounded">
+      <div class="left p2 mr1">
+        <img src="{{ lesson.author.photo }}" class="author-photo circle">
+      </div>
+      <div>
+        <a [routerLink]="['/lesson', lesson.id]" class="h2 text-decoration-none">{{ lesson.title }}</a>
+        <div class="description">{{ lesson.description }}</div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

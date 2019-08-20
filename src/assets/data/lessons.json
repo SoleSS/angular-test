@@ -1,12 +1,22 @@
 [
-  {
-    "id": 1,
-    "title": "Фрукты",
-    "params": {}
-  },
-  {
-    "id": 2,
-    "title": "Овощи",
-    "params": {}
-  }
+    {
+      "id": 1,
+      "title": "Фрукты",
+      "description": "Посмотрим насколько хорошо вы знаете фрукты...",
+      "params": {},
+      "author": {
+        "name": "Anna Kaiser",
+        "photo": "assets/images/anna-kaiser.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Овощи",
+      "description": "Попробуйте разобраться со всеми овощами...",
+      "params": {},
+      "author": {
+        "name": "Anna Kaiser",
+        "photo": "assets/images/anna-kaiser.jpg"
+      }
+    }
 ]

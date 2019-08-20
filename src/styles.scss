@@ -3,6 +3,10 @@ body {
   background-color: #eeeeee;
 }
 
+a, a:hover {
+  color: #000;
+}
+
 fa-icon { width: fit-content; }
 
 .block {
@@ -14,6 +18,10 @@ fa-icon { width: fit-content; }
 .list-reset {
   list-style: none;
   padding-left: 0;
+}
+
+.rounded {
+  border-radius: 3px;
 }
 
 .circle, .badge {
@@ -70,6 +78,16 @@ fa-icon { width: fit-content; }
   text-align: center;
 }
 
+
+.h1 {
+  font-size: 2rem;
+}
+.h2 {
+  font-size: 1.5rem;
+}
+.h3 {
+  font-size: 1.25rem;
+}
 
 .text-decoration-none {
   text-decoration: none;
