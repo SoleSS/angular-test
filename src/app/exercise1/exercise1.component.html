@@ -3,11 +3,12 @@
     {{params.title}}
   </div>
 
-  <div class="options-wrap fit-content mx-auto">
-    <div class="option fit-content left border mr1" *ngFor="let item of params.options">
+  <div class="clearfix options-wrap fit-content mx-auto">
+    <div class="option fit-content1 left rounded border mr1 mb1" *ngFor="let item of params.options">
       <img src="{{item.image}}">
     </div>
   </div>
 
+  <a class="btn btn-success center block mx-auto fit-content h2">Проверить</a>
 
 </div>
