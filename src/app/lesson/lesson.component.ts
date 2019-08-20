@@ -10,6 +10,7 @@ import { faBookmark, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./lesson.component.scss']
 })
 export class LessonComponent implements OnInit {
+  lessonId;
   lesson;
   createdAgoTxt = '***';
   faBookmark = faBookmark;
@@ -23,6 +24,8 @@ export class LessonComponent implements OnInit {
     private helper: Helper,
   ) {
     this.route.paramMap.subscribe(params => {
+      this.lessonId = params.get('lessonId');
+
       lessonService.getLesson(params.get('lessonId')).subscribe(
         data => {
           this.lesson = data;
