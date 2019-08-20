@@ -1,20 +1,64 @@
-<div class="clearfix" *ngIf="lesson">
-  <div class="author-wrap">
-    <div class="left photo-wrap mr1">
-      <img src="{{ lesson.author.photo }}" class="photo circle">
-    </div>
-    <div class="left info-wrap">
-      <div class="full-width h2 name-wrap">
-        {{ lesson.author.name }}
+<div class="lesson-wrap" *ngIf="lesson">
+  <div class="clearfix mb2">
+    <div class="author-wrap">
+      <div class="left photo-wrap mr1">
+        <img src="{{ lesson.author.photo }}" class="photo circle">
       </div>
-      <div class="full-width created-at-wrap">
-        {{ createdAgoTxt }}
+      <div class="left info-wrap">
+        <div class="full-width h2 name-wrap">
+          {{ lesson.author.name }}
+        </div>
+        <div class="full-width created-at-wrap">
+          {{ createdAgoTxt }}
+        </div>
+      </div>
+    </div>
+
+    <div class="right bookmarks-wrap pt2 mr2">
+      <a>
+        <fa-icon [icon]="faBookmark" class="mr2" size="2x"></fa-icon>
+      </a>
+      <a>
+        <fa-icon [icon]="faEllipsisV" class="" size="2x"></fa-icon>
+      </a>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="image-wrap left mr2">
+      <img src="{{ lesson.image }}" class="lesson-image rounded">
+    </div>
+
+    <div class="left info-wrap">
+      <div class="h1 title-wrap">
+        {{ lesson.title }}
+      </div>
+      <div class="h2 title-eng-wrap">
+        {{ lesson.eng_title }}
+      </div>
+      <div class="description-wrap">
+        {{ lesson.description }}
+      </div>
+      <div class="category-wrap">
+        {{ lesson.category }}
       </div>
     </div>
   </div>
 
-  <div class="right bookmarks-wrap pt2 mr2">
-    <fa-icon [icon]="faBookmark" class="mr2" size="2x"></fa-icon>
-    <fa-icon [icon]="faEllipsisV" class="" size="2x"></fa-icon>
+  <div class="clearfix">
+    <ul class="list-reset fit-content mx-auto">
+      <li class="inline-block mr2">
+        Об уроке
+      </li>
+      <li class="inline-block mr2">
+        Содержание
+      </li>
+      <li class="inline-block mr2">
+        Упражнения
+      </li>
+      <li class="inline-block mr2">
+        Выполнение урока
+      </li>
+    </ul>
   </div>
 </div>

@@ -1,9 +1,26 @@
-.author-wrap {
-  .photo {
-    width: 90px;
-    height: 90px;
+.lesson-wrap {
+  .author-wrap {
+    .photo {
+      width: 90px;
+      height: 90px;
+    }
+    .info-wrap {
+      padding-top: 20px;
+    }
   }
-  .info-wrap {
-    padding-top: 20px;
+
+  .bookmarks-wrap {
+    a, a:hover {
+      color: #5ab3e4;
+    }
+  }
+
+  .lesson-image {
+    width: 256px;
+    height: 256px;
+  }
+
+  .title-wrap {
+      color: #5ab3e4;
   }
 }
