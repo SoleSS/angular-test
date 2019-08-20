@@ -9,6 +9,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LessonpageComponent } from './lessonpage/lessonpage.component';
 import { LessonComponent } from './lesson/lesson.component';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LessonComponent } from './lesson/lesson.component';
     TopBarComponent,
     HomepageComponent,
     LessonpageComponent,
-    LessonComponent
+    LessonComponent,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,

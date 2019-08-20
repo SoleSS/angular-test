@@ -1,1 +1,20 @@
-<p>lesson works!</p>
+<div class="clearfix" *ngIf="lesson">
+  <div class="author-wrap">
+    <div class="left photo-wrap mr1">
+      <img src="{{ lesson.author.photo }}" class="photo circle">
+    </div>
+    <div class="left info-wrap">
+      <div class="full-width h2 name-wrap">
+        {{ lesson.author.name }}
+      </div>
+      <div class="full-width created-at-wrap">
+        {{ createdAgoTxt }}
+      </div>
+    </div>
+  </div>
+
+  <div class="right bookmarks-wrap pt2 mr2">
+    <fa-icon [icon]="faBookmark" class="mr2" size="2x"></fa-icon>
+    <fa-icon [icon]="faEllipsisV" class="" size="2x"></fa-icon>
+  </div>
+</div>
