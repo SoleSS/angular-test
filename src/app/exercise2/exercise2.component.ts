@@ -3,11 +3,11 @@ import { Input } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-exercise1',
-  templateUrl: './exercise1.component.html',
-  styleUrls: ['./exercise1.component.scss']
+  selector: 'app-exercise2',
+  templateUrl: './exercise2.component.html',
+  styleUrls: ['./exercise2.component.scss']
 })
-export class Exercise1Component implements OnInit {
+export class Exercise2Component implements OnInit {
   @Input() params;
   @Output() checkAnswear = new EventEmitter();
 
@@ -23,9 +23,7 @@ export class Exercise1Component implements OnInit {
     }
   }
 
-  constructor() {
-
-  }
+  constructor() { }
 
   ngOnInit() {
   }

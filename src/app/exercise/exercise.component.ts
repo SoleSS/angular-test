@@ -12,6 +12,9 @@ import {faExclamationCircle, faCheckCircle, faFlag} from '@fortawesome/free-soli
 })
 export class ExerciseComponent implements OnInit {
   @Input() params;
+  @Input() lessonId;
+  @Input() totalExercises;
+
   @Output() notify = new EventEmitter();
   results = [];
   faExclamationCircle = faExclamationCircle;

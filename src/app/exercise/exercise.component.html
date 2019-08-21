@@ -5,6 +5,13 @@
   </app-exercise1>
 </div>
 
+<div class="exercise-view-wrap" *ngIf="params.type === 2">
+  <app-exercise2
+    [params]="params"
+    (checkAnswear)="checkAnswear($event)">
+  </app-exercise2>
+</div>
+
 <div class="clearfix nav-wrap pl1 pr1 pt1 pb1 rounded" *ngIf="params !== null && results[params.id * 1] != undefined" [ngClass]="[results[params.id * 1].solved ? 'bg-green' : 'bg-red']">
   <div class="md-col md-col-3 pt1">
     <fa-icon *ngIf="results[params.id * 1].solved == false" [icon]="faExclamationCircle" class="mr1" size="2x"></fa-icon>
@@ -15,8 +22,17 @@
 
   <div class="md-col md-col-6">
     <a
+      *ngIf="params.id * 1 < totalExercises"
+      [routerLink]="['/lesson/' + lessonId + '/exercise/' + (params.id * 1 + 1)]"
       class="btn btn-success center block mx-auto fit-content h2">
       Дальше
+    </a>
+
+    <a
+      *ngIf="params.id * 1 == totalExercises"
+      [routerLink]="['/lesson/' + lessonId]"
+      class="btn btn-success center block mx-auto fit-content h2">
+      Закончить
     </a>
   </div>
 

@@ -9,10 +9,12 @@
     </div>
   </div>
 
+  {{latestId}}
+  {{params.id}}
   <a
-    [ngClass]="[checked ? 'hide' : '']"
+    [ngClass]="[latestId == params.id * 1 && checked ? 'hide' : '']"
     class="btn btn-success center block mx-auto fit-content h2"
-    (click)="!checked && checkAnswear.emit(selectedAnswear); checked = true;">
+    (click)="check()">
       Проверить
   </a>
 

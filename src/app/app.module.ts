@@ -11,6 +11,7 @@ import { LessonpageComponent } from './lessonpage/lessonpage.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { ExerciseComponent } from './exercise/exercise.component';
 import { Exercise1Component } from './exercise1/exercise1.component';
+import { Exercise2Component } from './exercise2/exercise2.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Exercise1Component } from './exercise1/exercise1.component';
     LessonpageComponent,
     LessonComponent,
     ExerciseComponent,
-    Exercise1Component
+    Exercise1Component,
+    Exercise2Component
   ],
   imports: [
     BrowserModule,
