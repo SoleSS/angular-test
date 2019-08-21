@@ -61,20 +61,28 @@ fa-icon { width: fit-content; }
 .badge-sm {
 
 }
-.bg-green, .bg-hover-green:hover {
+.bg-green, .bg-green:hover {
   color: #fff;
   background-color: #4CAF50;
   a, a:hover {
     color: #fff;
   }
 }
-.bg-red, .bg-hover-green:hover {
+.bg-red, .bg-red:hover {
   color: #fff;
   background-color: #f34848;
   a, a:hover {
     color: #fff;
   }
 }
+.bg-grey, .bg-grey:hover {
+  color: #000;
+  background-color: #e0dcdc;
+  a, a:hover {
+    color: #fff;
+  }
+}
+
 
 .btn-success {
   color: #fff;
@@ -131,6 +139,9 @@ fa-icon { width: fit-content; }
 
 .text-decoration-none {
   text-decoration: none;
+}
+.text-decoration-underline {
+  text-decoration: underline;
 }
 
 .mx-auto {

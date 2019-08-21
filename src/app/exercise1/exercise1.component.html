@@ -4,13 +4,11 @@
   </div>
 
   <div class="clearfix options-wrap fit-content mx-auto">
-    <div [ngClass]="[selectedAnswear == item.id ? 'selected' : '']" class="option fit-content1 left rounded border mr1 mb1" *ngFor="let item of params.options">
+    <div [ngClass]="[selectedAnswear == item.id ? 'selected' : '']" class="option fit-content left rounded border mr1 mb1" *ngFor="let item of params.options">
       <img src="{{item.image}}" (click)="selectedAnswear = item.id">
     </div>
   </div>
 
-  {{latestId}}
-  {{params.id}}
   <a
     [ngClass]="[latestId == params.id * 1 && checked ? 'hide' : '']"
     class="btn btn-success center block mx-auto fit-content h2"

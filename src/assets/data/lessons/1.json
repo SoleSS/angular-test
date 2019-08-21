@@ -43,9 +43,60 @@
     {
       "id": 2,
       "title": "Where are Bananas?",
-      "options": [],
+      "options": [
+        {
+          "id": 1,
+          "caption": null,
+          "image": "assets/images/bananas.jpg"
+        },
+        {
+          "id": 2,
+          "caption": null,
+          "image": "assets/images/apple.jpg"
+        },
+        {
+          "id": 3,
+          "caption": null,
+          "image": "assets/images/pineapple.jpg"
+        },
+        {
+          "id": 4,
+          "caption": null,
+          "image": "assets/images/strawberry.jpg"
+        }
+      ],
       "hash": "c4ca4238a0b923820dcc509a6f75849b",
       "type": 1
+    },
+    {
+      "id": 3,
+      "title": "Where __ an Apple?",
+      "question_left": "Where",
+      "question_right": "an Apple?",
+      "options": [
+        {
+          "id": 1,
+          "caption": "is",
+          "image": null
+        },
+        {
+          "id": 2,
+          "caption": "are",
+          "image": null
+        },
+        {
+          "id": 3,
+          "caption": "do",
+          "image": null
+        },
+        {
+          "id": 4,
+          "caption": "does",
+          "image": null
+        }
+      ],
+      "hash": "c4ca4238a0b923820dcc509a6f75849b",
+      "type": 2
     }
   ]
 }

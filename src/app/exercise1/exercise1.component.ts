@@ -16,10 +16,13 @@ export class Exercise1Component implements OnInit {
   latestId;
 
   check() {
+    this.checked = false;
+
     if (this.latestId !== this.params.id * 1 && this.selectedAnswear != null && !this.checked) {
       this.checkAnswear.emit(this.selectedAnswear);
       this.checked = true;
       this.latestId = this.params.id;
+      this.selectedAnswear = null;
     }
   }
 

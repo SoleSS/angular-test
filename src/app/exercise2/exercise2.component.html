@@ -1,12 +1,24 @@
 <div class="exercise-body" *ngIf="params">
   <div class="h1 center title-wrap mb2">
-    {{params.title}}
+    <span class="question-left mr1">{{params.question_left}}</span> <span class="filler">{{filler}}</span> <span class="ml1 question-right">{{params.question_right}}</span>
+  </div>
+
+  <div class="clearfix options-wrap fit-content mx-auto">
+    <div class="full-width" *ngFor="let item of params.options">
+      <a
+        [ngClass]="[selectedAnswear == item.id ? 'selected' : '']"
+        class="btn bg-grey option fit-content left rounded border mr1 mb1"
+        (click)="select(item.id)"
+      >
+        {{item.caption}}
+      </a>
+    </div>
   </div>
 
   <a
-    [ngClass]="[latestId == params.id && checked ? 'hide' : '']"
+    [ngClass]="[latestId == params.id * 1 && checked ? 'hide' : '']"
     class="btn btn-success center block mx-auto fit-content h2"
-    (click)="latestId != params.id && selectedAnswear != null && !checked && checkAnswear.emit(selectedAnswear) && (checked = true) && (latestId = params.id * 1);">
+    (click)="check()">
     Проверить
   </a>
 
