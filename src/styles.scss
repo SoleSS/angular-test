@@ -12,6 +12,10 @@ fa-icon { width: fit-content; }
 .block {
   display: block!important;
 }
+.hide {
+  display: none!important;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -60,16 +64,28 @@ fa-icon { width: fit-content; }
 .bg-green, .bg-hover-green:hover {
   color: #fff;
   background-color: #4CAF50;
+  a, a:hover {
+    color: #fff;
+  }
 }
 .bg-red, .bg-hover-green:hover {
   color: #fff;
   background-color: #f34848;
+  a, a:hover {
+    color: #fff;
+  }
 }
 
 .btn-success {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
+}
+
+.btn-fail {
+  color: #fff;
+  background-color: #f34848;
+  border-color: #f34848;
 }
 
 .btn {
@@ -184,6 +200,10 @@ fa-icon { width: fit-content; }
   .md-col {
     float: left;
     box-sizing: border-box;
+  }
+
+  .md-col-2 {
+    width: 16.66667%;
   }
 
   .md-col-3 {

@@ -9,7 +9,10 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class Exercise1Component implements OnInit {
   @Input() params;
-  @Output() notify = new EventEmitter();
+  @Output() checkAnswear = new EventEmitter();
+
+  selectedAnswear;
+  checked = false;
 
   constructor() { }
 

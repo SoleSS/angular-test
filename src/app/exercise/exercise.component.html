@@ -1,6 +1,27 @@
 <div class="exercise-view-wrap" *ngIf="params.type === 1">
   <app-exercise1
-    [params]="params">
+    [params]="params"
+    (checkAnswear)="checkAnswear($event)">
   </app-exercise1>
 </div>
 
+<div class="clearfix nav-wrap pl1 pr1 pt1 pb1 rounded" *ngIf="params !== null && results[params.id * 1] != undefined" [ngClass]="[results[params.id * 1].solved ? 'bg-green' : 'bg-red']">
+  <div class="md-col md-col-3 pt1">
+    <fa-icon *ngIf="results[params.id * 1].solved == false" [icon]="faExclamationCircle" class="mr1" size="2x"></fa-icon>
+    <span class="h2" *ngIf="results[params.id * 1].solved == false">Не верно</span>
+    <fa-icon *ngIf="results[params.id * 1].solved == true" [icon]="faCheckCircle" class="mr1" size="2x"></fa-icon>
+    <span class="h2" *ngIf="results[params.id * 1].solved == true">Верно</span>
+  </div>
+
+  <div class="md-col md-col-6">
+    <a
+      class="btn btn-success center block mx-auto fit-content h2">
+      Дальше
+    </a>
+  </div>
+
+  <div class="md-col md-col-3 pt1">
+    <fa-icon [icon]="faFlag" class="mr1" size="2x"></fa-icon>
+    <span class="h2">Сообщить об ошибке</span>
+  </div>
+</div>
