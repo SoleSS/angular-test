@@ -41,9 +41,15 @@ export class LessonComponent implements OnInit {
           }
 
           if (params.get('exerciseId') !== null) {
-            this.exercise = this.lesson.exercises.filter(obj => {
-              return (obj.id as number) === params.get('exerciseId') * 1;
-            });
+            const paramsExerciseId = parseInt(params.get('exerciseId'), 10);
+
+            for (const item of this.lesson.exercises) {
+              const lessonExerciseId = parseInt(item.id, 10);
+              if (lessonExerciseId === paramsExerciseId) {
+                this.exercise = item;
+                break;
+              }
+            }
           }
 
         },

@@ -18,25 +18,22 @@
       "options": [
         {
           "caption": null,
-          "image": "assets/images/bananas.jpg",
-          "hash": ""
+          "image": "assets/images/bananas.jpg"
         },
         {
           "caption": null,
-          "image": "assets/images/apple.jpg",
-          "hash": ""
+          "image": "assets/images/apple.jpg"
         },
         {
           "caption": null,
-          "image": "assets/images/pineapple.jpg",
-          "hash": ""
+          "image": "assets/images/pineapple.jpg"
         },
         {
           "caption": null,
-          "image": "assets/images/strawberry.jpg",
-          "hash": ""
+          "image": "assets/images/strawberry.jpg"
         }
       ],
+      "hash": "",
       "type": 1
     },
     {
