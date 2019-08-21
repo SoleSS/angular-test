@@ -21,6 +21,8 @@ export class ExerciseComponent implements OnInit {
   faCheckCircle = faCheckCircle;
   faFlag = faFlag;
 
+  currentProgress = 0;
+
   constructor(
     private lessonService: LessonService,
   ) {
@@ -36,6 +38,7 @@ export class ExerciseComponent implements OnInit {
     };
 
     // TODO: сохранить результаты на сервер...
+    this.currentProgress = Math.round((this.results.length - 1) / this.totalExercises * 100);
     console.log(this.results);
   }
 
